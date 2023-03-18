@@ -1,6 +1,6 @@
 #include <stdio>
 /**
- * main - prints all possible different combinations of two digits
+ * main - prints all possible different combinations of two different digits, in ascending order, separated by a comma and followed by a space.
  *
  * Return: always 0 (success)
  */
