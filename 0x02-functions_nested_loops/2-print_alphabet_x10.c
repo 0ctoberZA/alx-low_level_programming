@@ -1,11 +1,11 @@
-#iclude "main.h"
+#include "main.h"
 /**
- * main -  prints 10 times the alphabet, in lowercase.
+ * print_alphabet_x10 -  prints the alphabet 10 times.
  *
  * Return: always 0 (success)
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 int round = 0;
 
@@ -17,7 +17,7 @@ while (round < 10)
 	while (letter <= 'z')
 	{
 		_putchar(letter);
-		lettter++;
+		letter++;
 	}
 	_putchar('\n');
 
