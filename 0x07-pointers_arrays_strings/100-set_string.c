@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * set_string - that sets the value of a pointer to a char
- * @s: source address 
+ * @s: source address
  * @to: target address
  *
  */
