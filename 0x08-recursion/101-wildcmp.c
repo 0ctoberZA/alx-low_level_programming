@@ -4,7 +4,7 @@
  * substring_match - check if substring after wildcard matches s1
  * @s1: one string
  * @s2: one string
- * @after_wildcard: placeholder for position right after wildcard.
+ * @after_wldcd: placeholder for position right after wildcard.
  *
  * Return: 1 if matched, 0 if not.
  */
@@ -15,13 +15,13 @@ int substring_match(char *s1, char *s2, char *after_wldcd)
 	if (*s1 == '\0' && *s2 == '*')
 		return (subtring_match(s1, s2 + 1, s2 + 1));
 	if (*s1 == '\0' && *s2 != '\0')
-			return (0);
+		return (0);
 	if (*s2 == '*')
 		return (substring_match(s1, s2 + 1, s2 + 1));
 	if (*s1 == *s2)
-		return (substring_match(s1 + 1, s2 + 1, after_wildcard));
+		return (substring_match(s1 + 1, s2 + 1, after_wldcd));
 	else
-		return (substring_match(s1 + 1, after_wildcard, after_wildcard));
+		return (substring_match(s1 + 1, after_wildcd, after_wldcd));
 }
 /**
  * wildcmp - compare if string with wildcard matches
