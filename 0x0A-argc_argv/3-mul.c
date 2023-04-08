@@ -1,4 +1,5 @@
 #include <Stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * main -  multiplies two numbers.
