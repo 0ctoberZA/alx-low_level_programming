@@ -7,7 +7,7 @@
  * which contains a copy of the string given as a parameter.
  * @str: string to duplicate
  *
- * Return:
+ * Return: a pointer to the duplicated string in allocated memory
  */
 char *_strdup(char *str)
 {
