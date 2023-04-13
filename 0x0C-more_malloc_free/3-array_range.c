@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * simple_print_buffer - creates an array of integers.
+ * array_range - creates an array of integers.
  * @min: start of range
  * @max: end of range
  *
