@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -20,7 +22,7 @@ int main(int ac, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	calc + (int *)malloc((atoi(argv[1]) * atoi(argv[2])) * sizeof(int));
+	calc = (int *)malloc((atoi(argv[1]) * atoi(argv[2])) * sizeof(int));
 
 	if (calc == NULL)
 	{
