@@ -36,4 +36,4 @@ int main(int ac, char *argv[])
 	free(calc);
 
 	return (0);
-}	
+}
