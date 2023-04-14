@@ -46,7 +46,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  */
 int main(int *num1, int *num2)
 {
-	int i, j, carry, len1, len2, *total;
+	int i, j, arr, len1, len2, *total;
 
 	len1 = find_len(num1);
 	len2 = find_len(num2);
@@ -54,7 +54,7 @@ int main(int *num1, int *num2)
 	if (len1 > len2)
 		total = _calloc(len1 * 2, sizeof(int));
 	else
-		total = _calloc(len2 * 2, szeof(int));
+		total = _calloc(len2 * 2, sizeof(int));
 	if (!total)
 	{
 		free(arr);
