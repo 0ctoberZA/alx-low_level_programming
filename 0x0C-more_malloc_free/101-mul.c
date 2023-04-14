@@ -1,66 +1,37 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <main.h>
 
 /**
- * find_len - finds length of array
- * @arr: array to find length of
- *
- * Return: length of the array
+ * main - Entry point
+ * @ac: input
+ * @argv: argument to array
+ * Return: 0 on success
  */
-int find_len(int *arr)
+int main(int ac, char *argv[])
 {
-	int len;
+	int *calc;
 
-	for (len = 0; arr[len]; len++)
-		;
-	return (len);
-}
-/**
- * _calloc - allocates memory for an array of size bites
- * @nmemb: what to fill array with
- * @size: type of byte to allocate for memory
- *
- * Return: returns pointer to allocated memory otherwise NULL on fail
- */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *arr;
-	unsigned int i;
-
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	arr = malloc(nmemb * size);
-	if (arr == NULL)
-		return (NULL);
-	for (i = 0; i < nmemb * size; i++)
-		arr[i] = 0;
-	return ((void *)arr);
-}
-
-/**
- * main - multiplies two positive numbers
- * @num1: first number to multiply by
- * @num2: second number to multiply by
- *
- * Return: result followed by new line
- */
-int main(int *num1, int *num2)
-{
-	int i, j, arr, len1, len2, *total;
-
-	len1 = find_len(num1);
-	len2 = find_len(num2);
-
-	if (len1 > len2)
-		total = _calloc(len1 * 2, sizeof(int));
-	else
-		total = _calloc(len2 * 2, sizeof(int));
-	if (!total)
+	if (ac != 3)
 	{
-		free(arr);
-		return (NULL);
-
+		printf("Error\n");
+		exit(98);
 	}
-	i = 0;
-	j = 0;
-}
+	if (atoi(argv[1]) <= 0 || atoi(argv[2]) <= 0)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	calc + (int *)malloc((atoi(argv[1]) * atoi(argv[2])) * sizeof(int));
+
+	if (calc == NULL)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	calc[0] = atoi(argv[1]) * atoi(argv[2]);
+
+	printf("%d\n", calc[0]);
+	free(calc);
+
+	return (0);
+}	
