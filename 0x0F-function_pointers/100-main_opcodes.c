@@ -1,5 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main -  prints the opcodes of its own main function.
+ * @argc: argument counter
+ * @argv: argument
+ *
+ * Return: 0 on success
+ */
 
 int main(int argc, char *argv[])
 {
