@@ -1,11 +1,11 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - returns the sum of all its parameters.
+ * print_all - prints anything.
  * @format: a list of types of arguments passed to the function.
  *
  */
-int sum_them_all(const unsigned int n, ...)
+void print_all(const char * const format, ...)
 {
 	va_list valist;
 	unsigned int i = 0, j, c = 0;
