@@ -1,8 +1,8 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - returns the sum of all its parameters
- * @separator:
+ * print_strings - print varying amount of strings
+ * @separator: delimiter
  * @n: amount of arguments in list
  *
  */
