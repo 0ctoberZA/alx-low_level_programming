@@ -11,7 +11,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 	cat = mouse = head;
 
-	while (cat != NULL && hare != NULL)
+	while (cat != NULL && mouse != NULL)
 	{
 		cat = cat->next;
 		mouse = mouse->next->next;
