@@ -4,7 +4,7 @@
  * @n: unsigned int
  * @index: index within binary  number.
  *
- * Result: bit 
+ * Result: bit 0 or 1, or -1 if error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
