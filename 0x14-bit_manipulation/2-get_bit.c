@@ -2,9 +2,9 @@
 /**
  * get_bit - returns the value of a bit at a given index
  * @n: unsigned int
- * @index: index within binary  number.
+ * @index: index within binary number.
  *
- * Result: bit 0 or 1, or -1 if error
+ * Return: bit 0 or 1, or -1 if error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
