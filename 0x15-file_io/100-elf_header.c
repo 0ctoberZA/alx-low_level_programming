@@ -10,7 +10,7 @@ void get_type(Elf64_Ehdr *ehdr)
 	switch (ehdr->e_type)
 	{
 		case ET_NONE:
-			printf("NONE (Uknown type)\n");
+			printf("NONE (Unknown type)\n");
 			break;
 		case ET_REL:
 			printf("REL (Relocatable file)\n");
