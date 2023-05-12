@@ -1,4 +1,31 @@
 #include <stdio.h>
+#include <elf.h>
+/**
+ * get_type - determine file type
+ * @ehdr: pointer to struct of ELF header features
+ */
+void get_type(Elf64_Ehdr *ehdr)
+{
+	printf("%-35s", "Type:");
+	switch (ehdr->e_type)
+	{
+		case ET_NONE:
+			printf("NONE (Uknown type)\n");
+			break;
+		case ET_REL:
+			printf("REL (Relocatable file)\n");
+			break;
+		case ET_EXEC:
+			printf("EXEC (Exacutable file)\n");
+		case ET_DYN:
+			printf("DYN (Shared object file)\n");
+			break;
+		case ET_CORE:
+			printf("CORE (Core file)\n");
+			break;
+	}
+}
+
 /**
  * main - entry point for program to get header of ELF file
  * @argc: count of arguments present in CLI
