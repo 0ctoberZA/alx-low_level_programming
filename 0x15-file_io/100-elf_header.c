@@ -17,6 +17,7 @@ void get_type(Elf64_Ehdr *ehdr)
 			break;
 		case ET_EXEC:
 			printf("EXEC (Exacutable file)\n");
+			break;
 		case ET_DYN:
 			printf("DYN (Shared object file)\n");
 			break;
